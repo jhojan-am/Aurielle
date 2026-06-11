@@ -84,6 +84,11 @@ font-size:32px;
 font-weight:700;
 color:#2ecc71;
 letter-spacing:2px;
+transition:0.3s;
+}
+
+.logo:hover{
+transform:scale(1.05);
 }
 
 nav a{
@@ -151,6 +156,19 @@ right:-100px;
 max-width:600px;
 z-index:2;
 animation:fadeUp 1s ease;
+}
+
+.hero-tag{
+display:inline-block;
+background:rgba(46,204,113,0.18);
+border:1px solid rgba(46,204,113,0.4);
+color:#a8f0c6;
+font-size:13px;
+font-weight:600;
+padding:8px 20px;
+border-radius:30px;
+margin-bottom:20px;
+letter-spacing:1px;
 }
 
 .hero h1{
@@ -290,6 +308,63 @@ color:#555;
 }
 
 /* =========================
+BENEFICIOS
+========================= */
+
+.beneficios{
+padding:100px 8%;
+background:white;
+text-align:center;
+}
+
+.beneficios h2{
+font-size:42px;
+margin-bottom:60px;
+color:#1f8b4d;
+}
+
+.beneficios-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.beneficio{
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(15px);
+padding:35px 25px;
+border-radius:24px;
+width:230px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+border:1px solid rgba(255,255,255,0.4);
+transition:0.4s;
+}
+
+.beneficio:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 45px rgba(46,204,113,0.2);
+}
+
+.beneficio i{
+font-size:36px;
+color:#2ecc71;
+margin-bottom:18px;
+}
+
+.beneficio h4{
+font-size:18px;
+margin-bottom:10px;
+color:#27ae60;
+}
+
+.beneficio p{
+font-size:14px;
+color:#666;
+line-height:1.6;
+}
+
+/* =========================
 PRODUCTOS
 ========================= */
 
@@ -313,6 +388,7 @@ flex-wrap:wrap;
 }
 
 .producto{
+position:relative;
 background:rgba(255,255,255,0.8);
 backdrop-filter:blur(12px);
 padding:35px;
@@ -329,6 +405,24 @@ translateY(-12px)
 scale(1.03);
 }
 
+.producto-tag{
+position:absolute;
+top:18px;
+right:18px;
+background:linear-gradient(90deg,#2ecc71,#27ae60);
+color:white;
+font-size:12px;
+font-weight:600;
+padding:6px 14px;
+border-radius:20px;
+box-shadow:0 6px 15px rgba(46,204,113,0.3);
+}
+
+.producto-icon{
+font-size:48px;
+margin-bottom:15px;
+}
+
 .producto h3{
 font-size:28px;
 margin-bottom:18px;
@@ -340,6 +434,13 @@ font-size:16px;
 line-height:1.8;
 margin-bottom:25px;
 color:#555;
+}
+
+.producto-precio{
+font-size:24px;
+font-weight:700;
+color:#1f8b4d;
+margin-bottom:18px;
 }
 
 .btn-producto{
@@ -356,6 +457,150 @@ box-shadow:0 10px 25px rgba(46,204,113,0.25);
 
 .btn-producto:hover{
 transform:scale(1.05);
+}
+
+/* =========================
+TESTIMONIOS
+========================= */
+
+.testimonios{
+padding:100px 8%;
+background:linear-gradient(to bottom,#eef7f1,#f7faf8);
+text-align:center;
+}
+
+.testimonios h2{
+font-size:42px;
+margin-bottom:60px;
+color:#1f8b4d;
+}
+
+.testimonios-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.testimonio{
+background:rgba(255,255,255,0.8);
+backdrop-filter:blur(12px);
+padding:35px;
+border-radius:28px;
+width:300px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+text-align:left;
+transition:0.4s;
+}
+
+.testimonio:hover{
+transform:translateY(-8px);
+}
+
+.testimonio i.fa-quote-left{
+font-size:24px;
+color:#2ecc71;
+margin-bottom:15px;
+}
+
+.testimonio p{
+color:#555;
+line-height:1.7;
+margin-bottom:20px;
+font-size:15px;
+}
+
+.testimonio-autor{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.testimonio-avatar{
+width:45px;
+height:45px;
+border-radius:50%;
+background:linear-gradient(135deg,#2ecc71,#27ae60);
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-weight:600;
+font-size:18px;
+}
+
+.testimonio-autor h5{
+font-size:15px;
+color:#222;
+margin-bottom:2px;
+}
+
+.testimonio-autor span{
+font-size:13px;
+color:#888;
+}
+
+/* =========================
+CONTACTO
+========================= */
+
+.contacto{
+padding:100px 8%;
+background:white;
+text-align:center;
+}
+
+.contacto h2{
+font-size:42px;
+margin-bottom:25px;
+color:#1f8b4d;
+}
+
+.contacto p{
+max-width:650px;
+margin:0 auto 50px auto;
+color:#555;
+line-height:1.8;
+font-size:17px;
+}
+
+.pasos-container{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.paso{
+width:250px;
+}
+
+.paso-numero{
+width:60px;
+height:60px;
+border-radius:50%;
+background:linear-gradient(135deg,#2ecc71,#27ae60);
+color:white;
+font-size:24px;
+font-weight:700;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 18px auto;
+box-shadow:0 10px 25px rgba(46,204,113,0.3);
+}
+
+.paso h4{
+color:#27ae60;
+margin-bottom:10px;
+font-size:18px;
+}
+
+.paso p{
+font-size:14px;
+color:#666;
+line-height:1.6;
+margin-bottom:0;
 }
 
 /* =========================
@@ -477,6 +722,34 @@ color:#888;
 }
 
 /* =========================
+WHATSAPP FLOTANTE
+========================= */
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+background:#25d366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 10px 30px rgba(37,211,102,0.45);
+z-index:2000;
+animation:float 3s ease-in-out infinite;
+transition:0.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+}
+
+/* =========================
 ANIMACIONES
 ========================= */
 
@@ -573,6 +846,7 @@ Proyecto académico • Univalle La Paz • Bienestar estudiantil 🌿
 <a href="#">Inicio</a>
 <a href="#productos">Productos</a>
 <a href="#universidad">Nosotros</a>
+<a href="#contacto">Contacto</a>
 </nav>
 
 </header>
@@ -582,6 +856,8 @@ Proyecto académico • Univalle La Paz • Bienestar estudiantil 🌿
 <section class="hero">
 
 <div class="hero-content">
+
+<span class="hero-tag">🌿 Nuevo en Univalle</span>
 
 <h1>
 Aromas que transforman tu forma de estudiar 🌿
@@ -646,6 +922,42 @@ Convertirnos en una marca reconocida a nivel nacional por promover bienestar, in
 
 </section>
 
+<!-- BENEFICIOS -->
+
+<section class="beneficios">
+
+<h2>¿Por qué elegir Aurielle? 🌿</h2>
+
+<div class="beneficios-container">
+
+<div class="beneficio">
+<i class="fa-solid fa-leaf"></i>
+<h4>100% Natural</h4>
+<p>Ingredientes naturales sin químicos agresivos.</p>
+</div>
+
+<div class="beneficio">
+<i class="fa-solid fa-graduation-cap"></i>
+<h4>Hecho por estudiantes</h4>
+<p>Pensado por y para la comunidad universitaria.</p>
+</div>
+
+<div class="beneficio">
+<i class="fa-solid fa-clock"></i>
+<h4>Larga duración</h4>
+<p>Aroma persistente que dura toda tu jornada de estudio.</p>
+</div>
+
+<div class="beneficio">
+<i class="fa-solid fa-truck"></i>
+<h4>Entrega en campus</h4>
+<p>Coordinamos la entrega directamente en Univalle.</p>
+</div>
+
+</div>
+
+</section>
+
 <!-- PRODUCTOS -->
 
 <section id="productos" class="productos">
@@ -656,11 +968,17 @@ Convertirnos en una marca reconocida a nivel nacional por promover bienestar, in
 
 <div class="producto">
 
-<h3>Romero + Limón 🍋</h3>
+<span class="producto-tag">Más vendido</span>
+
+<div class="producto-icon">🍋</div>
+
+<h3>Romero + Limón</h3>
 
 <p>
 Una combinación energizante ideal para mejorar la memoria, activar la mente y aumentar la concentración.
 </p>
+
+<div class="producto-precio">Bs 35</div>
 
 <a href="romero.html" class="btn-producto">
 Ver más
@@ -670,11 +988,15 @@ Ver más
 
 <div class="producto">
 
-<h3>Lavanda + Manzanilla 🌸</h3>
+<div class="producto-icon">🌸</div>
+
+<h3>Lavanda + Manzanilla</h3>
 
 <p>
 Perfecta para disminuir la ansiedad, relajar el ambiente y generar tranquilidad durante largas sesiones de estudio.
 </p>
+
+<div class="producto-precio">Bs 35</div>
 
 <a href="lavanda.html" class="btn-producto">
 Ver más
@@ -684,16 +1006,108 @@ Ver más
 
 <div class="producto">
 
-<h3>Menta + Eucalipto 🍃</h3>
+<div class="producto-icon">🍃</div>
+
+<h3>Menta + Eucalipto</h3>
 
 <p>
 Refrescante y revitalizante. Ayuda a despejar la mente y combatir la fatiga mental.
 </p>
 
+<div class="producto-precio">Bs 35</div>
+
 <a href="menta.html" class="btn-producto">
 Ver más
 </a>
 
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIOS -->
+
+<section class="testimonios">
+
+<h2>Lo que dicen los estudiantes 💬</h2>
+
+<div class="testimonios-container">
+
+<div class="testimonio">
+<i class="fa-solid fa-quote-left"></i>
+<p>
+Desde que uso el aroma de Romero y Limón mientras estudio, siento que me concentro mucho más en los exámenes.
+</p>
+<div class="testimonio-autor">
+<div class="testimonio-avatar">D</div>
+<div>
+<h5>Daniela R.</h5>
+<span>Estudiante de Administración</span>
+</div>
+</div>
+</div>
+
+<div class="testimonio">
+<i class="fa-solid fa-quote-left"></i>
+<p>
+La Lavanda con Manzanilla me ayuda a relajarme antes de dormir después de largas jornadas de clases.
+</p>
+<div class="testimonio-autor">
+<div class="testimonio-avatar">J</div>
+<div>
+<h5>Jorge M.</h5>
+<span>Estudiante de Ingeniería</span>
+</div>
+</div>
+</div>
+
+<div class="testimonio">
+<i class="fa-solid fa-quote-left"></i>
+<p>
+Me encanta el packaging y el aroma de Menta y Eucalipto, perfecto para las mañanas de estudio.
+</p>
+<div class="testimonio-autor">
+<div class="testimonio-avatar">C</div>
+<div>
+<h5>Camila T.</h5>
+<span>Estudiante de Diseño</span>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section id="contacto" class="contacto">
+
+<h2>¿Cómo comprar? 🛒</h2>
+
+<p>
+Adquirir tu aroma Aurielle es muy fácil. Solo sigue estos pasos y te contactaremos por WhatsApp para coordinar la entrega.
+</p>
+
+<div class="pasos-container">
+
+<div class="paso">
+<div class="paso-numero">1</div>
+<h4>Elige tu aroma</h4>
+<p>Explora nuestros productos y elige el que más te guste.</p>
+</div>
+
+<div class="paso">
+<div class="paso-numero">2</div>
+<h4>Contáctanos</h4>
+<p>Escríbenos por WhatsApp o redes sociales para confirmar tu pedido.</p>
+</div>
+
+<div class="paso">
+<div class="paso-numero">3</div>
+<h4>Recíbelo en campus</h4>
+<p>Coordinamos la entrega directamente en Univalle La Paz.</p>
 </div>
 
 </div>
@@ -735,6 +1149,12 @@ Síguenos en nuestras redes sociales
 </p>
 
 </footer>
+
+<!-- WHATSAPP FLOTANTE -->
+
+<a href="https://wa.me/59177777777" target="_blank" class="whatsapp-float">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
